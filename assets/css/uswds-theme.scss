@@ -183,3 +183,19 @@ $theme-sidenav-breakpoint: '{{ site.data.navigation.sidenav-breakpoint | default
 
 // import user custom styles
 @import 'uswds-theme-custom-styles';
+
+.usa-header--extended .usa-navbar {
+ max-width: 100%;
+}
+
+.usa-header--extended .usa-nav__inner {
+ max-width: 100%;
+}
+
+.usa-identifier__container {
+ max-width: 100%;
+}
+
+.grid-container {
+ max-width: 100%;
+}

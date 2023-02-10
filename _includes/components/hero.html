@@ -4,10 +4,10 @@
 
 
     {% if hero.textcenter %}
-<div class="grid-container" style="text-align: center; margin-bottom:75px;">
-    <h1 style="font-size: 2.5em;"> {{ hero.textcenter | markdownify }} </h1>
+<div class="grid-container" style="text-align: center; margin-bottom:75px;font-size: 20px;">
+    <h1 style="font-size: 2.8em;"> {{ hero.textcenter | markdownify }} </h1>
 
-    <p style="font-size: 2.5em;"> {{ hero.contentcenter | markdownify }} </p>
+    <p> {{ hero.contentcenter | markdownify }} </p>
 </div>
     {% endif %}
 
