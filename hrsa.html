@@ -1,0 +1,416 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+
+<link rel="apple-touch-icon" type="image/png" href="hrsa_favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="hrsa_favicon.ico" />
+
+<link rel="mask-icon" type="image/x-icon" href="hrsa_favicon.ico" color="#111" />
+
+
+
+  <title>HRSA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.12.2/js/uswds-init.min.js" integrity="sha512-CERRusk3iiaHwELaoxK7Q70UHH6ifSJKSrq3Cfk/TsZooDq7sJYsRCPLdP3YMnTfr3LoeTALPlkpC6g+F6w1Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.12.2/css/uswds.min.css" integrity="sha512-g4+SYZBxcfquMadzMxmKJiI7vZE69b6jZqZ2KtZQ9qNXVI8WSwFBlHJEL+rlqDhsBgSxuZsVzQ+cY1HMjpqa2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+
+
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+<style>
+
+  .usa-hero {
+
+      background-image: url(HRSA_PlainImage.jpg);
+
+  }
+
+  .usa-prose>p {
+    line-height: 1.5;
+    margin-bottom: 0;
+    margin-top: 0;
+    max-width: 100%;
+}
+
+.usa-footer__secondary-section {
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    color: #fff;
+    background-color: #0b4778;
+}
+
+.usa-footer__contact-info {
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+}
+
+.usa-footer__secondary-section a {
+    color: #fff;
+}
+
+</style>
+
+
+</head>
+
+<body translate="no" >
+  <!-- Uncomment the pen below to use the Basic header -->
+<!-- <a class="usa-skipnav" href="#main-content">Skip to main content</a> <section class="usa-banner" aria-label="Official government website">   <div class="usa-accordion">     <header class="usa-banner__header">       <div class="usa-banner__inner">         <div class="grid-col-auto">           <img class="usa-banner__header-flag" src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.12.1/img/us_flag_small.png" alt="U.S. flag">         </div>         <div class="grid-col-fill tablet:grid-col-auto">           <p class="usa-banner__header-text">An official website of the United States government</p>           <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>         </div>         <button class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner">           <span class="usa-banner__button-text">Here’s how you know</span>         </button>       </div>     </header>     <div class="usa-banner__content usa-accordion__content" id="gov-banner">       <div class="grid-row grid-gap-lg">         <div class="usa-banner__guidance tablet:grid-col-6">           <img class="usa-banner__icon usa-media-block__img" src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.12.1/img/icon-dot-gov.svg" role="img" alt="" aria-hidden="true">           <div class="usa-media-block__body">             <p>               <strong>                 Official websites use .gov               </strong>               <br />               A <strong>.gov</strong> website belongs to an official government organization in the United States.              </p>           </div>         </div>         <div class="usa-banner__guidance tablet:grid-col-6">           <img class="usa-banner__icon usa-media-block__img" src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.12.1/img/icon-https.svg" role="img" alt="" aria-hidden="true">           <div class="usa-media-block__body">             <p>               <strong>                 Secure .gov websites use HTTPS               </strong>               <br />               A <strong>lock</strong> (               <span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title banner-lock-description" focusable="false">                   <title id="banner-lock-title">Lock</title>                   <desc id="banner-lock-description">A locked padlock</desc>                   <path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z" />                 </svg></span>               ) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.              </p>           </div>         </div>       </div>     </div>   </div> </section>  <div class="usa-overlay"></div> <header class="usa-header usa-header--basic">   <div class="usa-nav-container">     <div class="usa-navbar">       <div class="usa-logo" id="basic-logo">         <em class="usa-logo__text"><a href="javascript:void(0);" title="Home" aria-label="Home">Agency.gov</a></em>       </div>       <button class="usa-menu-btn">Menu</button>     </div>     <nav aria-label="Primary navigation" class="usa-nav">       <button class="usa-nav__close"><img src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.12.1/img/usa-icons/close.svg" role="img" alt="close"></button>       <ul class="usa-nav__primary usa-accordion">         <li class="usa-nav__primary-item">           <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-one"><span>Topics</span></button>           <ul id="extended-nav-section-one" class="usa-nav__submenu">             <li class="usa-nav__submenu-item">               <a href="javascript:void(0);" class="">Benefits</a>             </li>             <li class="usa-nav__submenu-item">               <a href="javascript:void(0);" class="">Grants and loans</a>             </li>             <li class="usa-nav__submenu-item">               <a href="javascript:void(0);" class="">Financial aid for students</a>             </li>             <li class="usa-nav__submenu-item">               <a href="javascript:void(0);" class="">Unemployment help</a>             </li>             <li class="usa-nav__submenu-item">               <a href="javascript:void(0);" class="">Military programs and benefits</a>             </li>           </ul>         </li>         <li class="usa-nav__primary-item">           <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-two"><span>Agency</span></button>           <ul id="extended-nav-section-two" class="usa-nav__submenu">             <li class="usa-nav__submenu-item">               <a href="javascript:void(0);" class="">About us</a>             </li>             <li class="usa-nav__submenu-item">               <a href="javascript:void(0);" class="">Initiatives</a>             </li>             <li class="usa-nav__submenu-item">               <a href="javascript:void(0);" class="">Divisions</a>             </li>             <li class="usa-nav__submenu-item">               <a href="javascript:void(0);" class="">Careers</a>             </li>             <li class="usa-nav__submenu-item">               <a href="javascript:void(0);" class="">Offices</a>             </li>           </ul>         </li>         <li class="usa-nav__primary-item">           <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-three"><span>Media</span></button>           <ul id="extended-nav-section-three" class="usa-nav__submenu">             <li class="usa-nav__submenu-item">               <a href="javascript:void(0);" class="">Blog</a>             </li>             <li class="usa-nav__submenu-item">               <a href="javascript:void(0);" class="">Social</a>             </li>             <li class="usa-nav__submenu-item">               <a href="javascript:void(0);" class="">Press releases</a>             </li>           </ul>         </li>       </ul>       <form class="usa-search usa-search--small" role="search">         <label class="usa-sr-only" for="basic-search-field-small">Search small</label>         <input class="usa-input" id="basic-search-field-small" type="search" name="search">         <button class="usa-button" type="submit"><span class="usa-sr-only">Search</span></button>       </form>     </nav>   </div> </header> -->
+<!-- Uncomment the pen below to use Extended header -->
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<section class="usa-banner" aria-label="Official government website">
+  <div class="usa-accordion">
+    <header class="usa-banner__header">
+      <div class="usa-banner__inner">
+        <div class="grid-col-auto">
+          <img class="usa-banner__header-flag" src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.11.1/img/us_flag_small.png" alt="U.S. flag">
+        </div>
+        <div class="grid-col-fill tablet:grid-col-auto">
+          <p class="usa-banner__header-text">An official website of the United States government</p>
+          <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+        </div>
+        <button class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner">
+          <span class="usa-banner__button-text">Here’s how you know</span>
+        </button>
+      </div>
+    </header>
+    <div class="usa-banner__content usa-accordion__content" id="gov-banner">
+      <div class="grid-row grid-gap-lg">
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.11.1/img/icon-dot-gov.svg" role="img" alt="" aria-hidden="true">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>
+                Official websites use .gov
+              </strong>
+              <br />
+              A <strong>.gov</strong> website belongs to an official government organization in the United States.
+
+            </p>
+          </div>
+        </div>
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.11.1/img/icon-https.svg" role="img" alt="" aria-hidden="true">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>
+                Secure .gov websites use HTTPS
+              </strong>
+              <br />
+              A <strong>lock</strong> (
+              <span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title banner-lock-description" focusable="false">
+                  <title id="banner-lock-title">Lock</title>
+                  <desc id="banner-lock-description">A locked padlock</desc>
+                  <path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z" />
+                </svg></span>
+              ) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="usa-overlay"></div>
+<header class="usa-header usa-header--extended">
+  <div class="usa-navbar">
+    <div class="usa-logo" id="extended-logo">
+      <img src="HRSA.png" width="200" />
+      <!--<em class="usa-logo__text"><a href="/" title="Home" aria-label="Home">Agency.gov</a></em>-->
+    </div>
+    <button class="usa-menu-btn">Menu</button>
+  </div>
+  <nav aria-label="Primary navigation" class="usa-nav">
+    <div class="usa-nav__inner"><button class="usa-nav__close"><img src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.11.1/img/usa-icons/close.svg" role="img" alt="close"></button>
+      <ul class="usa-nav__primary usa-accordion">
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link usa-current" href="javascript:void(0)"><span>Home</span></a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="javascript:void(0)"><span>Resources</span></a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="javascript:void(0)"><span>Contact</span></a>
+        </li>
+
+        <li class="usa-nav__primary-item">
+          <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-three"><span>Media</span></button>
+          <ul id="extended-nav-section-three" class="usa-nav__submenu">
+            <li class="usa-nav__submenu-item">
+              <a href="javascript:void(0);" class="">Blog</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="javascript:void(0);" class="">Social</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="javascript:void(0);" class="">Press releases</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="usa-nav__secondary">
+        <ul class="usa-nav__secondary-links">
+          <li class="usa-nav__secondary-item">
+            <a href="javascript:void(0);">Translate</a>
+          </li>
+          <li class="usa-nav__secondary-item">
+            <a href="javascript:void(0);">Log In</a>
+          </li>
+
+        </ul>
+        <form class="usa-search usa-search--small" role="search">
+          <label class="usa-sr-only" for="extended-search-field-small">Search small</label>
+          <input class="usa-input" id="extended-search-field-small" type="search" name="search">
+          <button class="usa-button" type="submit"><span class="usa-sr-only">Search</span></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+
+  <section class="usa-hero" aria-label="Introduction">
+        <div class="grid-container">
+          <div class="usa-hero__callout">
+            <h1 class="usa-hero__heading">
+              <span class="usa-hero__heading--alt"></span>
+                Welcome to the Provider Relief Fund Reporting Portal
+            </h1>
+            <p>
+              Already a registered PRF Reporting Portal User? First Time User? Click on 'Register' to create an account.
+            </p>
+            <a class="usa-button usa-button--accent-cool" href="">Log In</a>
+
+            <a class="usa-button usa-button--secondary" href="">Register</a>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section id="test-section-id" class="usa-section">
+            <div class="grid-container">
+
+              <h2 class="font-heading-xl margin-y-0">Reporting Period 4 will close at 11:59 P.M. Eastern Time on March 31, 2023.</h2>
+
+              <p class="usa-intro">
+                The PRF Reporting Portal is now open for Reporting Period 4. Recipients who received one or more General Distribution, Targeted Distribution and/or ARP Rural Distribution payments exceeding $10,000, in the aggregate, from July 1, 2021 to December 31, 2021 ARE REQUIRED to report on the use of their payments during Reporting Period 4.
+              </p>
+
+
+            </div>
+          </section>
+
+          <section id="test-section-id" class="usa-section" style="padding-top:0;">
+                <div class="grid-container">
+
+
+                  <h2 class="font-heading-xl margin-y-0">Register and create an account to get started.</h2>
+                  <p class="usa-intro">
+                    Registered portal users may log into the PRF Reporting Portal with a username and password. If you have not already done so, you will be required to select your two-factor authentication preference method prior to logging into the PRF Reporting Portal.
+                  </p>
+
+
+                </div>
+              </section>
+
+
+
+
+
+
+
+
+    </main>
+
+<!-- Uncomment the pen below to use the Medium Footer + Identifier components -->
+<footer class="usa-footer">
+    <div class="grid-container usa-footer__return-to-top">
+      <a href="#">Return to top</a>
+    </div>
+    <div class="usa-footer__primary-section">
+      <nav class="usa-footer__nav" aria-label="Footer navigation">
+        <ul class="grid-row grid-gap">
+
+          <li class="mobile-lg:grid-col-3 desktop:grid-col-auto usa-footer__primary-content">
+            <a class="usa-footer__primary-link" href="javascript:void(0);">Viewers & Players</a>
+          </li>
+          <li class="mobile-lg:grid-col-3 desktop:grid-col-auto usa-footer__primary-content">
+            <a class="usa-footer__primary-link" href="javascript:void(0);">Privacy Policy</a>
+          </li>
+          <li class="mobile-lg:grid-col-3 desktop:grid-col-auto usa-footer__primary-content">
+            <a class="usa-footer__primary-link" href="javascript:void(0);">Disclaimers</a>
+          </li>
+          <li class="mobile-lg:grid-col-3 desktop:grid-col-auto usa-footer__primary-content">
+            <a class="usa-footer__primary-link" href="javascript:void(0);">Accessibility</a>
+          </li>
+          <li class="mobile-lg:grid-col-3 desktop:grid-col-auto usa-footer__primary-content">
+            <a class="usa-footer__primary-link" href="javascript:void(0);">Freedom of Information Act</a>
+          </li>
+          <li class="mobile-lg:grid-col-3 desktop:grid-col-auto usa-footer__primary-content">
+            <a class="usa-footer__primary-link" href="javascript:void(0);">EEO/No Fear Act</a>
+          </li>
+          <li class="mobile-lg:grid-col-3 desktop:grid-col-auto usa-footer__primary-content">
+            <a class="usa-footer__primary-link" href="javascript:void(0);">U.S. Department of Health and Human Services</a>
+          </li>
+          <li class="mobile-lg:grid-col-3 desktop:grid-col-auto usa-footer__primary-content">
+            <a class="usa-footer__primary-link" href="javascript:void(0);">USA.gov</a>
+          </li>
+          <li class="mobile-lg:grid-col-3 desktop:grid-col-auto usa-footer__primary-content">
+            <a class="usa-footer__primary-link" href="javascript:void(0);">Whitehouse.gov</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="usa-footer__secondary-section">
+      <div class="grid-container">
+
+        <div class="grid-row grid-gap">
+          <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+            <div >
+
+            </div>
+
+          </div>
+
+<p>Contact: Provider Support Line (866) 569-3522; for TTY dial 711. Hours 8 a.m. to 10 p.m. CT, M-F when the PRF portal is open for reporting. Hours are subject to change</p>
+
+
+            <!--<address class="usa-footer__address">
+              <div class="usa-footer__contact-info grid-row grid-gap">
+                <div class="grid-col-auto">
+                  <a href="tel:1-800-555-5555">Viewers & Players</a>
+                </div>
+
+                <div class="grid-col-auto">
+                  <a href="javascript:void(0);">Privacy Policy</a>
+                </div>
+
+                <div class="grid-col-auto">
+                  <a href="javascript:void(0);">Disclaimers</a>
+                </div>
+
+                <div class="grid-col-auto">
+                  <a href="javascript:void(0);">Accessibility</a>
+                </div>
+
+                <div class="grid-col-auto">
+                  <a href="javascript:void(0);">Freedom of Information Act</a>
+                </div>
+
+                <div class="grid-col-auto">
+                  <a href="javascript:void(0);">EEO/No Fear Act</a>
+                </div>
+
+                <div class="grid-col-auto">
+                  <a href="javascript:void(0);">U.S. Department of Health and Human Services</a>
+                </div>
+
+                <div class="grid-col-auto">
+                  <a href="javascript:void(0);">USA.gov</a>
+                </div>
+
+                <div class="grid-col-auto">
+                  <a href="javascript:void(0);">Whitehouse.gov</a>
+                </div>
+              </div>
+            </address>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="usa-identifier">
+    <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+      <div class="usa-identifier__container">
+
+        <div class="usa-identifier__identity" aria-label="Agency description">
+
+          <p class="usa-identifier__identity-disclaimer">Language Assistance</p>
+        </div>
+      </div>
+    </section>
+    <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+      <div class="usa-identifier__container">
+        <ul class="usa-identifier__required-links-list">
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link">Deutsch</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link">Tagalog</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">English</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Tiếng Việt</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Español</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Русский</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Français</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Italiano</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">فارسی</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Kreyòl Ayisyen</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">日本語</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Polski</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">繁體中文</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Português</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">한국어</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src='https://cdnjs.cloudflare.com/ajax/libs/uswds/2.12.2/js/uswds.min.js'></script>
+
+
+
+</body>
+
+</html>

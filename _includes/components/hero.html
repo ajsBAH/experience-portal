@@ -1,0 +1,186 @@
+{% if hero %}
+<section class="usa-hero"{% if hero.image %} style="background-image: url({{ hero.image }})"{% endif %} aria-label="Introduction";>
+  <div class="grid-container">
+
+
+    {% if hero.textcenter %}
+<div class="grid-container" style="text-align: center; margin-bottom:75px;">
+    <h1 style="font-size: 2.5em;"> {{ hero.textcenter | markdownify }} </h1>
+
+    <p style="font-size: 2.5em;"> {{ hero.contentcenter | markdownify }} </p>
+</div>
+    {% endif %}
+
+
+    <div class="usa-card-group">
+
+      <div class="usa-hero__callout desktop:grid-col-3 margin-right-2">
+        {% if hero.callout %}
+        <h1 class="usa-hero__heading">
+          {% if hero.callout.alt %}
+          <span class="usa-hero__heading--alt">{{ hero.callout.alt }}</span>
+          {% endif %}
+          {{ hero.callout.text | default: hero.callout }}
+        </h1>
+        {% endif %}
+
+        {{ hero.content | markdownify }}
+
+        {% if hero.button %}
+        <a class="usa-button"
+          href="{{ hero.button.href | relative_url }}">
+          {{ hero.button.text }}
+        </a>
+        {% endif %}
+      </div>
+
+      <div class="usa-hero__callout desktop:grid-col-3 margin-right-2">
+        {% if hero.callout2 %}
+        <h1 class="usa-hero__heading">
+          {% if hero.callout2.alt %}
+          <span class="usa-hero__heading--alt">{{ hero.callout2.alt }}</span>
+          {% endif %}
+          {{ hero.callout2.text2 | default: hero.callout2 }}
+        </h1>
+        {% endif %}
+
+        {{ hero.content2 | markdownify }}
+
+        {% if hero.button2 %}
+        <a class="usa-button"
+          href="{{ hero.button.href | relative_url }}">
+          {{ hero.button2.text2 }}
+        </a>
+        {% endif %}
+      </div>
+
+          <div class="usa-hero__callout desktop:grid-col-3 margin-right-2">
+            {% if hero.callout3 %}
+            <h1 class="usa-hero__heading">
+              {% if hero.callout3.alt %}
+              <span class="usa-hero__heading--alt">{{ hero.callout3.alt }}</span>
+              {% endif %}
+              {{ hero.callout3.text3 | default: hero.callout3 }}
+            </h1>
+            {% endif %}
+
+            {{ hero.content3 | markdownify }}
+
+            {% if hero.button3 %}
+            <a class="usa-button"
+              href="{{ hero.button.href | relative_url }}">
+              {{ hero.button3.text3 }}
+            </a>
+            {% endif %}
+          </div>
+
+
+          <div class="usa-hero__callout desktop:grid-col-3">
+            {% if hero.callout4 %}
+            <h1 class="usa-hero__heading">
+              {% if hero.callout4.alt %}
+              <span class="usa-hero__heading--alt">{{ hero.callout4.alt }}</span>
+              {% endif %}
+              {{ hero.callout4.text4 | default: hero.callout4 }}
+            </h1>
+            {% endif %}
+
+            {{ hero.content4 | markdownify }}
+
+            {% if hero.button4 %}
+            <a class="usa-button"
+              href="{{ hero.button4.href4 | relative_url }}">
+              {{ hero.button4.text4 }}
+            </a>
+            {% endif %}
+          </div>
+
+              <div class="usa-hero__callout desktop:grid-col-3 margin-right-2 margin-top-2">
+                {% if hero.callout5 %}
+                <h1 class="usa-hero__heading">
+                  {% if hero.callout5.alt %}
+                  <span class="usa-hero__heading--alt">{{ hero.callout5.alt }}</span>
+                  {% endif %}
+                  {{ hero.callout5.text5 | default: hero.callout5 }}
+                </h1>
+                {% endif %}
+
+                {{ hero.content5 | markdownify }}
+
+                {% if hero.button5 %}
+                <a class="usa-button"
+                  href="{{ hero.button5.href5 | relative_url }}">
+                  {{ hero.button5.text5 }}
+                </a>
+                {% endif %}
+              </div>
+
+              <div class="usa-hero__callout desktop:grid-col-3 margin-right-2 margin-top-2">
+                {% if hero.callout6 %}
+                <h1 class="usa-hero__heading">
+                  {% if hero.callout6.alt %}
+                  <span class="usa-hero__heading--alt">{{ hero.callout6.alt }}</span>
+                  {% endif %}
+                  {{ hero.callout6.text6 | default: hero.callout6 }}
+                </h1>
+                {% endif %}
+
+                {{ hero.content6 | markdownify }}
+
+                {% if hero.button6 %}
+                <a class="usa-button"
+                  href="{{ hero.button6.href6 | relative_url }}">
+                  {{ hero.button6.text6 }}
+                </a>
+                {% endif %}
+              </div>
+
+              <div class="usa-hero__callout desktop:grid-col-3 margin-right-2 margin-top-2">
+                {% if hero.callout7 %}
+                <h1 class="usa-hero__heading">
+                  {% if hero.callout7.alt %}
+                  <span class="usa-hero__heading--alt">{{ hero.callout7.alt }}</span>
+                  {% endif %}
+                  {{ hero.callout7.text7 | default: hero.callout7 }}
+                </h1>
+                {% endif %}
+
+                {{ hero.content7 | markdownify }}
+
+                {% if hero.button7 %}
+                <a class="usa-button"
+                  href="{{ hero.button7.href7 | relative_url }}">
+                  {{ hero.button7.text7 }}
+                </a>
+                {% endif %}
+              </div>
+
+
+              <div class="usa-hero__callout desktop:grid-col-3 margin-top-2">
+                {% if hero.callout8 %}
+                <h1 class="usa-hero__heading">
+                  {% if hero.callout8.alt %}
+                  <span class="usa-hero__heading--alt">{{ hero.callout8.alt }}</span>
+                  {% endif %}
+                  {{ hero.callout8.text8 | default: hero.callout8 }}
+                </h1>
+                {% endif %}
+
+                {{ hero.content8 | markdownify }}
+
+                {% if hero.button8 %}
+                <a class="usa-button"
+                  href="{{ hero.button8.href8 | relative_url }}">
+                  {{ hero.button8.text8 }}
+                </a>
+                {% endif %}
+              </div>
+
+      </div>
+
+
+
+
+  </div>
+</section>
+{% endif %}

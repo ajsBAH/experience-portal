@@ -1,0 +1,57 @@
+{% assign user = site.data.identifier %}
+{% assign static = site.data.static.identifier %}
+<div class="usa-identifier">
+  <br/>
+  <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="{{ static.required_links.label.content[user.lang] }}">
+    <div class="usa-identifier__container">
+      <ul class="usa-identifier__required-links-list">
+        <li class="usa-identifier__required-links-item">
+          <a href="{{ user.required_links.links.about.url[user.lang] }}" class="usa-identifier__required-link">
+            {{- static.required_links.links.about.content[user.lang] }} {{ user.masthead.parent.shortname -}}
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="{{ user.required_links.links.accessibility.url[user.lang] }}"
+            class="usa-identifier__required-link">
+            {{- static.required_links.links.accessibility.content[user.lang] -}}
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="{{ user.required_links.links.foia.url[user.lang] }}"
+            class="usa-identifier__required-link usa-link">
+            {{- static.required_links.links.foia.content[user.lang] -}}
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="{{ user.required_links.links.no_fear.url[user.lang] }}"
+            class="usa-identifier__required-link usa-link">
+            {{- static.required_links.links.no_fear.content[user.lang] -}}
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="{{ user.required_links.links.oig.url[user.lang] }}" class="usa-identifier__required-link usa-link">
+            {{- static.required_links.links.oig.content[user.lang] -}}
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="{{ user.required_links.links.performance.url[user.lang] }}" class="usa-identifier__required-link usa-link">
+            {{- static.required_links.links.performance.content[user.lang] -}}
+          </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="{{ user.required_links.links.privacy.url[user.lang] }}" class="usa-identifier__required-link usa-link">
+            {{- static.required_links.links.privacy.content[user.lang] -}}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  {% if user.usagov.display -%}
+  <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="{{ static.usagov.label.content[user.lang] }}">
+    <div class="usa-identifier__container">
+      <div class="usa-identifier__usagov-description">{{ static.usagov.description.content[user.lang] }}</div>
+      <a href="{{ user.usagov.link.url[user.lang] }}" class="usa-link">{{ static.usagov.link.content[user.lang] }}</a>
+    </div>
+  </section>
+  {% endif -%}
+</div>
