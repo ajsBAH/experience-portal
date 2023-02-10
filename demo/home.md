@@ -7,7 +7,7 @@ layout: home
 hero:
   image: /gradient1.jpg
   textcenter: U.S. Web Design System Integration Guide
-  contentcenter: Developers of the U.S. Web Design System have created implementations for popular content management systems, web frameworks, and package managers that may help get you started more quickly and easily. Though some implementations may not include all of USWDS, they should give your team a strong foundation to work from.
+  contentcenter: Developers of the U.S. Web Design System have created implementations for popular content management systems, web frameworks, and package managers that may help get you started more quickly and easily.
   callout:
     text: Salesforce
   button:
