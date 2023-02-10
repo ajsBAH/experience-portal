@@ -4,8 +4,8 @@ description: This is a developer portal for developer reusability .
 # GitHub information
 # This is used for adding an edit this page link to the footer
 github_info:
-  organization: 18F
-  repository: uswds-jekyll
+  organization: Booz Allen Hamilton
+  repository: experience-portal
   default_branch: main
 
 # Configuration for setting the site width to 100%
