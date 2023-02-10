@@ -27,8 +27,8 @@ secondary:
 docs:
   - text: Sidenav Documentation
     href: /docs/
-  - text: Sidenav External link
-    href: https://18f.gsa.gov
+  - text: Lighting Web Components
+    href: https://developer.salesforce.com/docs/component-library/overview/components
     external: true
 
 # Uncomment the 'links' sections below to use footer link columns

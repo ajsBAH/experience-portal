@@ -84,5 +84,12 @@ hero:
 ---
 
 
+# Start
 
-{:.font-heading-xl.margin-y-0"}
+**Real user needs should inform product decisions.** Whether your audience includes members of the public or government employees, decision-makers must include real people from the beginning of the design process. Test your team’s assumptions and the products and services you build with real people to keep focused on what is most useful and important.
+
+**Identify your platform**
+
+**Follow the link to see installation documentation and resource files.** Each project will include a complete package of the USWDS framework
+
+**Customize your theme**

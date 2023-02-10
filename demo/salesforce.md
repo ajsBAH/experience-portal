@@ -6,9 +6,9 @@ permalink: /salesforce/
 layout: post
 sidenav: docs
 subnav:
-  - text: Section one
+  - text: Intro
     href: '#section-one'
-  - text: Section two
+  - text: Build
     href: '#section-two'
 ---
 
